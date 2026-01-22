@@ -15,7 +15,28 @@ margin: 20px;
     margin-right: 20px;
     text-align: center;
 }
-
+.features{
+    display: flex;
+    text-align: center;
+    margin: 20px;
+    padding:20px;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-section{
+    display:flex;
+    flex-direction: column;
+    align-items: space-around;
+    
+}
+.footer-section p {
+    text-wrap: wrap;
+}
+.social-links a{
+    margin-right: 10px;
+}
 /* 
 Challenge: Use flexbox in media queries to create a responsive layout 
 */
