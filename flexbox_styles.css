@@ -32,7 +32,9 @@ margin: 20px;
     
 }
 .footer-section p {
-    text-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+    width: 350px;
 }
 .social-links a{
     margin-right: 10px;
@@ -40,5 +42,4 @@ margin: 20px;
 /* 
 Challenge: Use flexbox in media queries to create a responsive layout 
 */
-
 
