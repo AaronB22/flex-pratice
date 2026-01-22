@@ -1,9 +1,20 @@
-/* 
-TODO: Add styles to match the layout in the image.
-Note: you should only need to use flexbox properties and margin/padding to create the layout.
-*/
+header{
+    display:flex;
+    padding: 15px;
+    justify-content: space-around;
+}
+nav a{
+margin: 20px;
+}
 
-
+.card-container{
+    display: flex;
+    flex-direction: row;
+}
+.card{
+    margin-right: 20px;
+    text-align: center;
+}
 
 /* 
 Challenge: Use flexbox in media queries to create a responsive layout 
