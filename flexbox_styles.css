@@ -1,45 +1,90 @@
-header{
-    display:flex;
+header {
+    display: flex;
     padding: 15px;
     justify-content: space-around;
 }
-nav a{
-margin: 20px;
+
+nav a {
+    margin: 20px;
 }
 
-.card-container{
+.card-container {
     display: flex;
     flex-direction: row;
 }
-.card{
+
+.card {
     margin-right: 20px;
     text-align: center;
 }
-.features{
+
+.features {
     display: flex;
     text-align: center;
     margin: 20px;
-    padding:20px;
+    padding: 20px;
 }
-.footer-content{
+
+.footer-content {
     display: flex;
     justify-content: space-between;
 }
-.footer-section{
-    display:flex;
+
+.footer-section {
+    display: flex;
     flex-direction: column;
     align-items: space-around;
-    
+
 }
+
 .footer-section p {
     display: flex;
     flex-wrap: wrap;
     width: 350px;
 }
-.social-links a{
+
+.social-links a {
     margin-right: 10px;
 }
+
 /* 
 Challenge: Use flexbox in media queries to create a responsive layout 
 */
+@media screen and (width <1000px) {
+    header {
+        padding: 0px;
+    }
 
+    .card-container {
+        flex-direction: column;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .card {
+        margin: 10px
+    }
+
+    .features {
+        flex-direction: column;
+    }
+}
+
+@media screen and (width <600px) {
+    .footer-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+
+    .social-links a {
+        margin-right: 0;
+    }
+}
